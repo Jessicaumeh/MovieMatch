@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+  }
+  .header {
+    background-color: #a97c68;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0px;
+   
+  }
+  .header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .header .nav {
+    display: flex;
+    gap: 15px;
+    text-align: right;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; /* Use flexbox to keep items in one line */
+    align-items: center; /
+    
+  }
+  .search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; 
+    outline: none;
+    font-size: 16px;
+  }
+  .search-bar button {
+    padding: 10px;
+    background-color: #a97c68;
+    border: none;
+    color: white;
+    border-radius:  0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .second-title {
+    text-align: center;
+    margin: 20px;
+  }
+  .second-title h2 {
+    margin: 10px 0;
+    color: #a97c68;
+  }
+  .movie-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+  }
+  .movie-card {
+    width: 150px;
+    height: 200px;
+    background-color: #a97c68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 4px;
+  }
