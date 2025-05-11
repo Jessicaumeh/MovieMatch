@@ -2,10 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0e0e0;
+    background-color:  #ffe4f2;
   }
   .header {
-    background-color: #a97c68;
+    background-color: #ff80bf;
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -38,21 +38,21 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex; /* Use flexbox to keep items in one line */
+    display: flex; /* to keep items in one line */
     align-items: center; /
     
   }
   .search-bar input[type="text"] {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid  #ffb3d8;
     border-radius: 4px 0 0 4px; 
     outline: none;
     font-size: 16px;
   }
   .search-bar button {
     padding: 10px;
-    background-color: #a97c68;
+    background-color:  #ff66b3;
     border: none;
     color: white;
     border-radius:  0 4px 4px 0;
@@ -68,7 +68,7 @@ body {
   }
   .second-title h2 {
     margin: 10px 0;
-    color: #a97c68;
+    color:  #ff66b3;
   }
   .movie-list {
     display: flex;
@@ -79,10 +79,54 @@ body {
   .movie-card {
     width: 150px;
     height: 200px;
-    background-color: #a97c68;
+    background-color: #ff80bf;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     border-radius: 4px;
   }
+
+  /* Hover effect on movie cards */
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+/* Zoom image slightly on hover */
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Hero section */
+.hero-section {
+  background-color:  #f7c7e0;
+  height: 350px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h1,
+.hero-section p {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
